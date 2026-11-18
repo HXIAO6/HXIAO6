@@ -31,13 +31,6 @@
 
 
 
-## 📈 GitHub
-
-<div align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=HXIAO6&show_icons=true&hide_title=true&locale=cn" />
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HXIAO6&layout=compact&locale=cn" />
-</div>
-
 ## 📫 联系
 
 - GitHub：[@HXIAO6](https://github.com/HXIAO6)
