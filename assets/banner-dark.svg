@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="HXIAO6 banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0F1C"/>
+      <stop offset="1" stop-color="#14203A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#818CF8"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1E293B" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#grid)" opacity="0.55"/>
+  <rect x="0" y="0" width="6" height="320" fill="url(#accent)"/>
+
+  <!-- left: identity -->
+  <text x="72" y="96" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="14" letter-spacing="5" fill="#64748B">SHANGHAI UNIVERSITY · CS · M.S. 2026</text>
+
+  <text x="68" y="176" font-family="ui-sans-serif, -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif"
+        font-size="74" font-weight="800" letter-spacing="1" fill="#F8FAFC">HXIAO6</text>
+
+  <text x="72" y="222" font-family="ui-sans-serif, -apple-system, 'Segoe UI', sans-serif"
+        font-size="23" font-weight="600" letter-spacing="2" fill="url(#accent)">AGENT · RAG · LLM</text>
+
+  <text x="72" y="258" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif"
+        font-size="16" fill="#94A3B8">万神 ／ 智能体安全 · 把能跑的东西推进到可验证、可复现</text>
+
+  <!-- right: retrieval / agent graph motif -->
+  <g filter="url(#glow)" stroke="url(#accent)" stroke-width="1.6" fill="none" opacity="0.85">
+    <path d="M818 152 L906 96"/>
+    <path d="M818 152 L918 170"/>
+    <path d="M906 96 L1010 122"/>
+    <path d="M918 170 L1010 122"/>
+    <path d="M918 170 L1000 236"/>
+    <path d="M1010 122 L1082 178"/>
+    <path d="M1000 236 L1082 178"/>
+    <path d="M906 96 L1000 236" stroke-dasharray="4 6" opacity="0.45"/>
+  </g>
+
+  <g>
+    <circle cx="818" cy="152" r="7" fill="#22D3EE"/>
+    <circle cx="906" cy="96"  r="5" fill="#67E8F9"/>
+    <circle cx="918" cy="170" r="5" fill="#A5B4FC"/>
+    <circle cx="1010" cy="122" r="9" fill="#818CF8"/>
+    <circle cx="1000" cy="236" r="5" fill="#67E8F9"/>
+    <circle cx="1082" cy="178" r="6" fill="#22D3EE"/>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#475569">
+    <text x="836" y="146">query</text>
+    <text x="1018" y="112">retrieve</text>
+    <text x="990" y="262">rerank</text>
+    <text x="1090" y="200">answer</text>
+  </g>
+
+  <rect x="72" y="286" width="90" height="3" rx="1.5" fill="url(#accent)" opacity="0.9"/>
+</svg>

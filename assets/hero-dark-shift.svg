@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="HXIAO6">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050A15"/>
+      <stop offset="1" stop-color="#0B1526"/>
+    </linearGradient>
+    <radialGradient id="aur1"><stop offset="0" stop-color="#1D4ED8" stop-opacity="0.55"/><stop offset="1" stop-color="#1D4ED8" stop-opacity="0"/></radialGradient>
+    <radialGradient id="aur2"><stop offset="0" stop-color="#0891B2" stop-opacity="0.5"/><stop offset="1" stop-color="#0891B2" stop-opacity="0"/></radialGradient>
+    <radialGradient id="aur3"><stop offset="0" stop-color="#7C3AED" stop-opacity="0.45"/><stop offset="1" stop-color="#7C3AED" stop-opacity="0"/></radialGradient>
+    <linearGradient id="nameG" x1="0" y1="0" x2="1" y2="0.4">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.55" stop-color="#BFDBFE"/>
+      <stop offset="1" stop-color="#C4B5FD"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#818CF8"/>
+    </linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#1B2A45" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="wipe"><rect x="0" y="0" width="0" height="380">
+      <animate attributeName="width" from="0" to="1200" begin="0.3s" dur="1.3s" fill="freeze" calcMode="spline" keySplines="0.22 0.61 0.36 1"/>
+    </rect></clipPath>
+    <clipPath id="track"><rect x="72" y="336" width="1056" height="4"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="380" fill="url(#bg)"/>
+
+  <g>
+    <ellipse cx="300" cy="40" rx="380" ry="200" fill="url(#aur1)">
+      <animateTransform attributeName="transform" type="translate" values="0 0;70 26;-24 12;0 0" dur="19s" repeatCount="indefinite" begin="-1.7371s"/>
+      <animate attributeName="opacity" values="0.75;1;0.7;0.75" dur="13s" repeatCount="indefinite" begin="-1.7371s"/>
+    </ellipse>
+    <ellipse cx="980" cy="300" rx="340" ry="190" fill="url(#aur2)">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-54 -18;20 -6;0 0" dur="23s" repeatCount="indefinite" begin="-1.7371s"/>
+      <animate attributeName="opacity" values="0.6;0.95;0.55;0.6" dur="17s" repeatCount="indefinite" begin="-1.7371s"/>
+    </ellipse>
+    <ellipse cx="700" cy="-30" rx="300" ry="160" fill="url(#aur3)">
+      <animateTransform attributeName="transform" type="translate" values="0 0;40 20;-30 8;0 0" dur="27s" repeatCount="indefinite" begin="-1.7371s"/>
+    </ellipse>
+  </g>
+
+  <rect width="1200" height="380" fill="url(#grid)" opacity="0.34"/>
+
+  <g clip-path="url(#wipe)">
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+      <text x="72" y="104" font-size="13" letter-spacing="5.5" fill="#5B7290">SHANGHAI UNIVERSITY · CS · M.SC 2026</text>
+    </g>
+
+    <text x="66" y="200" font-family="ui-sans-serif, -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif"
+          font-size="82" font-weight="800" letter-spacing="1" fill="url(#nameG)" filter="url(#glow)">HXIAO6</text>
+
+    <text x="72" y="246" font-family="ui-sans-serif, -apple-system, 'Segoe UI', sans-serif"
+          font-size="22" font-weight="600" letter-spacing="3.4" fill="url(#acc)">AGENT · RAG · LLM</text>
+
+    <text x="72" y="282" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif"
+          font-size="15" fill="#8A9CB5">万神 ／ 智能体安全 · 可验证、可复现、可交付</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="0.85" begin="1.1s" dur="0.9s" fill="freeze"/>
+    <circle cx="76" cy="304" r="4" fill="#34D399"/>
+    <circle cx="76" cy="304" r="4" fill="none" stroke="#34D399" stroke-width="1">
+      <animate attributeName="r" values="4;13" dur="2.6s" repeatCount="indefinite" begin="-1.7371s"/>
+      <animate attributeName="opacity" values="0.85;0" dur="2.6s" repeatCount="indefinite" begin="-1.7371s"/>
+    </circle>
+    <text x="94" y="309" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="12" letter-spacing="2.4" fill="#5B7290">STATUS · EXPLORING</text>
+  </g>
+
+  <!-- retrieval / agent graph -->
+  <g stroke="url(#acc)" stroke-width="1.5" fill="none" opacity="0.9" stroke-dasharray="7 11">
+    <path d="M812 186 L906 112"><animate attributeName="stroke-dashoffset" from="0" to="-72" dur="2.8s" repeatCount="indefinite" begin="-1.7371s"/></path>
+    <path d="M812 186 L922 206"><animate attributeName="stroke-dashoffset" from="0" to="-72" dur="3.4s" repeatCount="indefinite" begin="-1.7371s"/></path>
+    <path d="M906 112 L1014 138"><animate attributeName="stroke-dashoffset" from="0" to="-72" dur="2.2s" repeatCount="indefinite" begin="-1.7371s"/></path>
+    <path d="M922 206 L1014 138"><animate attributeName="stroke-dashoffset" from="0" to="-72" dur="3.1s" repeatCount="indefinite" begin="-1.7371s"/></path>
+    <path d="M922 206 L1006 282"><animate attributeName="stroke-dashoffset" from="0" to="-72" dur="2.5s" repeatCount="indefinite" begin="-1.7371s"/></path>
+    <path d="M1014 138 L1092 214"><animate attributeName="stroke-dashoffset" from="0" to="-72" dur="2.9s" repeatCount="indefinite" begin="-1.7371s"/></path>
+    <path d="M1006 282 L1092 214"><animate attributeName="stroke-dashoffset" from="0" to="-72" dur="3.6s" repeatCount="indefinite" begin="-1.7371s"/></path>
+  </g>
+
+  <g>
+    <circle cx="812" cy="186" r="8" fill="#22D3EE"/>
+    <circle cx="812" cy="186" r="8" fill="none" stroke="#22D3EE" stroke-width="1.2">
+      <animate attributeName="r" values="8;26" dur="3s" repeatCount="indefinite" begin="-1.7371s"/>
+      <animate attributeName="opacity" values="0.8;0" dur="3s" repeatCount="indefinite" begin="-1.7371s"/>
+    </circle>
+    <circle cx="906" cy="112" r="5" fill="#67E8F9"/>
+    <circle cx="922" cy="206" r="5" fill="#A5B4FC"/>
+    <circle cx="1014" cy="138" r="11" fill="#818CF8"/>
+    <circle cx="1014" cy="138" r="11" fill="none" stroke="#818CF8" stroke-width="1.2">
+      <animate attributeName="r" values="11;30" dur="4.2s" repeatCount="indefinite" begin="-1.7371s"/>
+      <animate attributeName="opacity" values="0.75;0" dur="4.2s" repeatCount="indefinite" begin="-1.7371s"/>
+    </circle>
+    <circle cx="1006" cy="282" r="5" fill="#67E8F9"/>
+    <circle cx="1092" cy="214" r="7" fill="#22D3EE"/>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#4E6482" letter-spacing="1.4">
+    <text x="826" y="178">query</text>
+    <text x="1022" y="128">retrieve</text>
+    <text x="944" y="296">rerank</text>
+    <text x="1100" y="236">answer</text>
+  </g>
+
+  <rect x="72" y="336" width="1056" height="2" fill="#15233C" rx="1"/>
+  <g clip-path="url(#track)">
+    <rect x="-220" y="336" width="220" height="2" fill="url(#acc)">
+      <animate attributeName="x" values="-220;1200" dur="5.5s" repeatCount="indefinite" begin="-1.7371s"/>
+    </rect>
+  </g>
+</svg>
