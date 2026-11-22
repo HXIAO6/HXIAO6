@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" width="400" height="170" role="img" aria-label="RAG-Learning">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1526"/><stop offset="1" stop-color="#0E1B33"/></linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#818CF8"/></linearGradient>
+    <radialGradient id="gl"><stop offset="0" stop-color="#1D4ED8" stop-opacity="0.3"/><stop offset="1" stop-color="#1D4ED8" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect x="0.75" y="0.75" width="398.5" height="168.5" rx="16" fill="url(#bg)" stroke="#1E3054" stroke-width="1.5"/>
+  <ellipse cx="360" cy="18" rx="150" ry="80" fill="url(#gl)"/>
+  <rect x="22" y="0.75" width="86" height="2" rx="1" fill="url(#acc)" opacity="0.95"/>
+  <circle cx="25.5" cy="30.5" r="3.5" fill="url(#acc)"/>
+  <text x="35" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="2.6" fill="#5B7290">PYTHON</text>
+  <text x="21" y="70" font-family="ui-sans-serif, -apple-system, 'Segoe UI', sans-serif" font-size="25" font-weight="700" letter-spacing="0.3" fill="#F1F5F9">RAG-Learning</text>
+  <text x="22" y="92" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#94A3B8">RAG 概念笔记与最小实验</text>
+  <text x="22" y="109" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#94A3B8">切分 / 向量化 / 召回 / 重排的踩坑记录</text>
+  <rect x="22" y="132" width="70.9" height="21" rx="10.5" fill="#16263F" stroke="#1E3054" stroke-width="0.8"/>
+  <text x="57.5" y="146.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#8FD3E8">Retrieval</text>
+  <rect x="99.92000000000002" y="132" width="47.4" height="21" rx="10.5" fill="#16263F" stroke="#1E3054" stroke-width="0.8"/>
+  <text x="123.6" y="146.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#8FD3E8">Notes</text>
+  <g opacity="0.55">
+  <rect x="314" y="14" width="56" height="9" rx="4.5" fill="none" stroke="#22D3EE" stroke-width="1.4"/>
+  <rect x="314" y="29" width="56" height="9" rx="4.5" fill="none" stroke="#22D3EE" stroke-width="1.4"/>
+  <rect x="314" y="44" width="56" height="9" rx="4.5" fill="none" stroke="#818CF8" stroke-width="1.4"/>
+  </g>
+</svg>
